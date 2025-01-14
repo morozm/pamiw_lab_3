@@ -1,0 +1,611 @@
+﻿<!--
+
+=========================================================
+* Now UI Dashboard - v1.5.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/now-ui-dashboard
+* Copyright 2019 Creative Tim (http://www.creative-tim.com)
+
+* Designed by www.invisionapp.com Coded by www.creative-tim.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+@model IEnumerable<zad2.Models.Product>
+@{
+    ViewData["Title"] = "Dashboard";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Now UI Dashboard by Creative Tim
+    </title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- CSS Files -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/now-ui-dashboard.css?v=1.5.0" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="../assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="">
+    <div class="wrapper ">
+        <div class="sidebar" data-color="orange">
+            <!--
+                Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+            -->
+            <div class="logo">
+                <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+                    CT
+                </a>
+                <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+                    Creative Tim
+                </a>
+            </div>
+            <div class="sidebar-wrapper" id="sidebar-wrapper">
+                <ul class="nav">
+                    <li class="active ">
+                        <a href="./dashboard.html">
+                            <i class="now-ui-icons design_app"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./icons.html">
+                            <i class="now-ui-icons education_atom"></i>
+                            <p>Icons</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./map.html">
+                            <i class="now-ui-icons location_map-big"></i>
+                            <p>Maps</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./notifications.html">
+                            <i class="now-ui-icons ui-1_bell-53"></i>
+                            <p>Notifications</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./user.html">
+                            <i class="now-ui-icons users_single-02"></i>
+                            <p>User Profile</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./tables.html">
+                            <i class="now-ui-icons design_bullet-list-67"></i>
+                            <p>Table List</p>
+                        </a>
+                    </li>
+                    <li class="active-pro">
+                        <a href="./upgrade.html">
+                            <i class="now-ui-icons arrows-1_cloud-download-93"></i>
+                            <p>Upgrade to PRO</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel" id="main-panel">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-transparent  bg-primary  navbar-absolute">
+                <div class="container-fluid">
+                    <div class="navbar-wrapper">
+                        <div class="navbar-toggle">
+                            <button type="button" class="navbar-toggler">
+                                <span class="navbar-toggler-bar bar1"></span>
+                                <span class="navbar-toggler-bar bar2"></span>
+                                <span class="navbar-toggler-bar bar3"></span>
+                            </button>
+                        </div>
+                        <a class="navbar-brand" href="#pablo">Dashboard</a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <!-- Formularz wyszukiwania -->
+                        <form>
+                            <div class="input-group no-border">
+                                <input type="text" id="searchQuery" class="form-control" placeholder="Search...">
+                                <div class="input-group-append">
+                                    <div class="input-group-text">
+                                        <i class="now-ui-icons ui-1_zoom-bold"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pablo">
+                                    <i class="now-ui-icons media-2_sound-wave"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Stats</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="now-ui-icons location_world"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Some Actions</span>
+                                    </p>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pablo">
+                                    <i class="now-ui-icons users_single-02"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Account</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <div class="panel-header panel-header-xs">
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card card-chart">
+                            <div class="card-header">
+                                <h5 class="card-category">Quantity Chart</h5>
+                                <h4 class="card-title">Products Quantity By Category</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-area">
+                                    <canvas id="lineChartProducts"></canvas>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="stats">
+                                    <i class="now-ui-icons arrows-1_refresh-69"></i> Just Updated
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card card-chart">
+                            <div class="card-header">
+                                <h5 class="card-category">Quantity Chart</h5>
+                                <h4 class="card-title">Products Average Value By Category</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-area">
+                                    <canvas id="lineChartProducts2"></canvas>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="stats">
+                                    <i class="now-ui-icons arrows-1_refresh-69"></i> Just Updated
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Example single danger button -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sortuj po
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#" id="sortPriceDesc">Cenie malejąco</a>
+                        <a class="dropdown-item" href="#" id="sortPriceAsc">Cenie rosnąco</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">Id</th>
+                                    <th>Name</th>
+                                    <th>Category</th>
+                                    <th>Price</th>
+                                    <th class="text-right">Quantity</th>
+                                    <th class="text-right">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="productsTableBody">
+                                <!-- Wiersze zostaną wygenerowane dynamicznie -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Formularz edycji -->
+                <div id="editProductFormContainer" style="display: none;">
+                    <form id="editProductForm" method="post" action="/Product/Edit">
+                        <div class="form-group">
+                            <label for="productId">Product ID</label>
+                            <input type="text" class="form-control" id="productId" name="Id" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productName">Product Name</label>
+                            <input type="text" class="form-control" id="productName" name="Name" placeholder="Enter product name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productCategory">Category</label>
+                            <input type="text" class="form-control" id="productCategory" name="Category" placeholder="Enter product category">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productPrice">Price</label>
+                            <input type="number" class="form-control" id="productPrice" name="Price" placeholder="Enter product price" step="0.01" min="0">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productQuantity">Quantity</label>
+                            <input type="number" class="form-control" id="productQuantity" name="Quantity" placeholder="Enter product quantity">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                        <button type="button" class="btn btn-secondary" id="cancelEditBtn">Cancel</button>
+                    </form>
+                </div>
+                <div id="addProductFormContainer" style="display: none;">
+                    <form id="addProductForm" method="post" action="/Product/Create">
+                        <div class="form-group">
+                            <label for="productName">Product Name</label>
+                            <input type="text" class="form-control" id="productNameAdd" name="Name" placeholder="Enter product name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productCategory">Category</label>
+                            <input type="text" class="form-control" id="productCategoryAdd" name="Category" placeholder="Enter product category">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productPrice">Price</label>
+                            <input type="number" class="form-control" id="productPriceAdd" name="Price" placeholder="Enter product price" step="0.01" min="0">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productQuantity">Quantity</label>
+                            <input type="number" class="form-control" id="productQuantityAdd" name="Quantity" placeholder="Enter product quantity">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Add Product</button>
+                        <button type="button" class="btn btn-secondary" id="cancelAddBtn">Cancel</button>
+                    </form>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class=" container-fluid ">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="https://www.creative-tim.com">
+                                    Creative Tim
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://presentation.creative-tim.com">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://blog.creative-tim.com">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="copyright" id="copyright">
+                        &copy; <script>
+                                   document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+                        </script>, Designed by <a href="https://www.invisionapp.com" target="_blank">Invision</a>. Coded by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/jquery.min.js"></script>
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <!--  Google Maps Plugin    -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+    <!-- Chart JS -->
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <!--  Notifications Plugin    -->
+    <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+    <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="../assets/js/now-ui-dashboard.min.js?v=1.5.0" type="text/javascript"></script><!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
+    <script src="../assets/demo/demo.js"></script>
+    <script>
+        $(document).ready(function() {
+          // Javascript method's body can be found in assets/js/demos.js
+          demo.initDashboardPageCharts();
+
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Funkcja do ładowania danych z serwera
+        async function loadChartData() {
+            try {
+                // Pobierz dane JSON z kontrolera
+                const response = await fetch('/Product/GetProductsJson');
+                const products = await response.json();
+
+                // Grupuj produkty według kategorii
+                const groupedData = products.reduce((acc, product) => {
+                    acc[product.Category] = (acc[product.Category] || 0) + product.Quantity;
+                    return acc;
+                }, {});
+               
+                // Przygotuj dane do wykresu
+                const labels = Object.keys(groupedData);
+                const values = Object.values(groupedData);
+
+                // Tworzenie wykresu
+                const ctx = document.getElementById('lineChartProducts').getContext('2d');
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Ilość Produktów (Quantity)',
+                            data: values,
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true, // Dostosowanie wykresu do szerokości kontenera
+                        maintainAspectRatio: false, // Umożliwia zmianę proporcji wykresu
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error('Błąd podczas ładowania danych:', error);
+            }
+        }
+        // Załaduj dane i zainicjuj wykres
+        loadChartData();
+    </script>
+    <script>
+        // Funkcja do ładowania danych z serwera
+        async function loadChartData() {
+            try {
+                // Pobierz dane JSON z kontrolera
+                const response = await fetch('/Product/GetProductsJson');
+                const products = await response.json();
+
+                // Grupuj produkty według kategorii
+                const groupedData = products.reduce((acc, product) => {
+                    // Jeśli kategoria już istnieje, zaktualizuj sumy (ceny i ilości)
+                    if (acc[product.Category]) {
+                        acc[product.Category].totalPrice += product.Price * product.Quantity; // Suma cen
+                        acc[product.Category].totalQuantity += product.Quantity; // Suma ilości
+                    } else {
+                        // Jeśli kategoria nie istnieje, dodaj ją
+                        acc[product.Category] = {
+                            totalPrice: product.Price * product.Quantity, // Inicjuj sumę cen
+                            totalQuantity: product.Quantity // Inicjuj sumę ilości
+                        };
+                    }
+                    return acc;
+                }, {});
+
+                // Przygotuj dane do wykresu
+                const labels = Object.keys(groupedData); // Kategorie
+                const values = Object.values(groupedData).map(data => data.totalPrice / data.totalQuantity); // Średnia cena w każdej kategorii
+
+                // Tworzenie wykresu
+                const ctx = document.getElementById('lineChartProducts2').getContext('2d');
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Średnia Cena Produktów (Average Price)',
+                            data: values,
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true, // Dostosowanie wykresu do szerokości kontenera
+                        maintainAspectRatio: false, // Umożliwia zmianę proporcji wykresu
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error('Błąd podczas ładowania danych:', error);
+            }
+        }
+
+        // Załaduj dane i zainicjuj wykres
+        loadChartData();
+    </script>
+    <script>
+        async function loadProducts(query = "", sortOrder = "") {
+            try {
+                // Pobierz dane z serwera na podstawie zapytania
+                const response = await fetch(`/Product/SearchProducts?query=${query}`);
+                let products = await response.json();
+
+                // Sortuj produkty według ceny
+                products = sortProductsByPrice(products, sortOrder);
+
+                const tableBody = document.getElementById("productsTableBody");
+                tableBody.innerHTML = ""; // Wyczyść aktualną tabelę
+
+                // Jeśli produkty istnieją, dodaj je do tabeli
+                products.forEach(product => {
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+                            <td class="text-center">${product.id}</td>
+                            <td>${product.name}</td>
+                            <td>${product.category}</td>
+                            <td>${product.price}</td>
+                            <td class="text-right">${product.quantity}</td>
+                            <td class="text-right">
+                                <button class="btn btn-info btn-sm btn-icon" data-id="${product.id}"><i class="now-ui-icons users_single-02"></i></button>
+                                <button class="btn btn-success btn-sm btn-icon" data-id="${product.id}"><i class="now-ui-icons ui-2_settings-90"></i></button>
+                                <button class="btn btn-danger btn-sm btn-icon" data-id="${product.id}"><i class="now-ui-icons ui-1_simple-remove"></i></button>
+                            </td>
+                        `;
+                    tableBody.appendChild(row);
+                });
+                // Przypisanie funkcji do przycisków edycji
+                document.querySelectorAll('.btn.btn-success.btn-sm.btn-icon').forEach(button => {
+                    button.addEventListener('click', handleEditClick);
+                });
+                // Przypisanie funkcji do przycisków usunięcia
+                document.querySelectorAll('.btn.btn-danger.btn-sm.btn-icon').forEach(button => {
+                    button.addEventListener('click', handleDeleteClick);
+                });
+                // Przypisanie funkcji do przycisków dodanie
+                document.querySelectorAll('.btn.btn-info.btn-sm.btn-icon').forEach(button => {
+                    button.addEventListener('click', handleAddClick);
+                });
+            } catch (error) {
+                console.error('Błąd podczas ładowania danych:', error);
+            }
+        }
+
+        // Funkcja do sortowania produktów
+        function sortProductsByPrice(products, order) {
+            return products.sort((a, b) => {
+                if (order === "asc") {
+                    return a.price - b.price;
+                }
+                else if (order === "desc") {
+                    return b.price - a.price;
+                }
+                else
+                    return 0;
+            });
+        }
+        // Obsługa kliknięcia w przyciski sortowania
+        document.getElementById('sortPriceAsc').addEventListener('click', () => loadProducts("", "asc"));
+        document.getElementById('sortPriceDesc').addEventListener('click', () => loadProducts("", "desc"));
+
+        // Załaduj wszystkie produkty na początku
+        loadProducts();
+
+        // Wyszukiwanie produktów po wpisaniu tekstu
+        document.getElementById("searchQuery").addEventListener("input", function () {
+            const query = this.value;
+            loadProducts(query); // Prześlij zapytanie do serwera
+        });
+        // Funkcja do obsługi kliknięcia w "Edytuj"
+        function handleEditClick(event) {
+            const productId = event.target.closest('button').getAttribute('data-id');
+
+            // Pobierz dane produktu
+            fetch(`/Product/GetProductById/${productId}`)
+                .then(response => response.json())
+                .then(product => {
+                    // Wypełnij formularz danymi produktu
+                    document.getElementById('productId').value = product.id;
+                    document.getElementById('productName').value = product.name;
+                    document.getElementById('productCategory').value = product.category;
+                    document.getElementById('productPrice').value = product.price;
+                    document.getElementById('productQuantity').value = product.quantity;
+
+                    // Pokaż formularz edycji
+                    document.getElementById('editProductFormContainer').style.display = 'block';
+                    document.getElementById('addProductFormContainer').style.display = 'none';
+                })
+                .catch(error => console.error('Error fetching product:', error));
+        }
+        // Funkcja do anulowania edycji
+        document.getElementById('cancelEditBtn').addEventListener('click', function () {
+            document.getElementById('editProductFormContainer').style.display = 'none';
+        });
+        // Funkcja do obsługi kliknięcia w "Dodaj" - tworzenie nowego produktu na podstawie istniejącego
+        function handleAddClick(event) {
+            const productId = event.target.closest('button').getAttribute('data-id');
+
+            // Pobierz dane produktu
+            fetch(`/Product/GetProductById/${productId}`)
+                .then(response => response.json())
+                .then(product => {
+                    // Wypełnij formularz danymi istniejącego produktu
+                    document.getElementById('productNameAdd').value = product.name;  // Przykład: kopiowanie nazwy
+                    document.getElementById('productCategoryAdd').value = product.category;  // Przykład: kopiowanie kategorii
+                    document.getElementById('productPriceAdd').value = product.price;  // Przykład: kopiowanie ceny
+                    document.getElementById('productQuantityAdd').value = product.quantity;  // Przykład: kopiowanie ilości
+
+                    // Pokaż formularz dodawania nowego produktu
+                    document.getElementById('addProductFormContainer').style.display = 'block';
+                    document.getElementById('editProductFormContainer').style.display = 'none';
+                })
+                .catch(error => console.error('Error fetching product:', error));
+        }
+
+        // Funkcja do anulowania dodawania
+        document.getElementById('cancelAddBtn').addEventListener('click', function () {
+            document.getElementById('addProductFormContainer').style.display = 'none';
+        });
+        // Funkcja do obsługi kliknięcia w "Usuń"
+        function handleDeleteClick(event) {
+            const productId = event.target.closest('button').getAttribute('data-id');
+
+            // Potwierdzenie usunięcia produktu
+            const confirmation = confirm('Czy na pewno chcesz usunąć ten produkt?');
+            if (!confirmation) return; // Jeśli użytkownik anuluje, nic się nie dzieje
+
+            // Wyślij żądanie do serwera, aby usunąć produkt
+            fetch(`/Product/Delete/${productId}`, {
+                method: 'DELETE', // Używamy metody DELETE do usunięcia
+            })
+                .then(response => {
+                    if (response.ok) {
+                        alert('Produkt został usunięty.');
+                        location.reload(); // Odśwież stronę po usunięciu produktu
+                    } else {
+                        alert('Błąd podczas usuwania produktu.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Błąd podczas usuwania produktu:', error);
+                    alert('Wystąpił błąd przy próbie usunięcia produktu.');
+                });
+        }
+    </script>
+</body>
+</html>

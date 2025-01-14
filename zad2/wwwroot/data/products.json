@@ -1,0 +1,142 @@
+[
+  {
+    "Id": 1,
+    "Name": "Laptop HP Spectre",
+    "Category": "Elektronika",
+    "Price": 800.0,
+    "Quantity": 25
+  },
+  {
+    "Id": 2,
+    "Name": "Smartphone Samsung Galaxy",
+    "Category": "Elektronika",
+    "Price": 699.99,
+    "Quantity": 30
+  },
+  {
+    "Id": 3,
+    "Name": "Smartwatch Apple Watch",
+    "Category": "Elektronika",
+    "Price": 299.99,
+    "Quantity": 45
+  },
+  {
+    "Id": 4,
+    "Name": "Koszulka",
+    "Category": "Odzież",
+    "Price": 29.99,
+    "Quantity": 100
+  },
+  {
+    "Id": 5,
+    "Name": "Spodnie Levi's",
+    "Category": "Odzież",
+    "Price": 79.99,
+    "Quantity": 60
+  },
+  {
+    "Id": 6,
+    "Name": "Bluza Adidas",
+    "Category": "Odzież",
+    "Price": 59.99,
+    "Quantity": 80
+  },
+  {
+    "Id": 7,
+    "Name": "Kawa ekspresowa Krups",
+    "Category": "Dom",
+    "Price": 139.99,
+    "Quantity": 40
+  },
+  {
+    "Id": 8,
+    "Name": "Zestaw noży kuchennych",
+    "Category": "Dom",
+    "Price": 49.99,
+    "Quantity": 120
+  },
+  {
+    "Id": 9,
+    "Name": "Odkurzacz Dyson V11",
+    "Category": "Dom",
+    "Price": 599.99,
+    "Quantity": 15
+  },
+  {
+    "Id": 10,
+    "Name": "Piłka do piłki nożnej Adidas",
+    "Category": "Sport",
+    "Price": 25.99,
+    "Quantity": 110
+  },
+  {
+    "Id": 11,
+    "Name": "Rower górski Trek",
+    "Category": "Sport",
+    "Price": 499.99,
+    "Quantity": 20
+  },
+  {
+    "Id": 12,
+    "Name": "Hantle do ćwiczeń",
+    "Category": "Sport",
+    "Price": 15.99,
+    "Quantity": 70
+  },
+  {
+    "Id": 13,
+    "Name": "Lalka Barbie",
+    "Category": "Zabawki",
+    "Price": 19.99,
+    "Quantity": 150
+  },
+  {
+    "Id": 14,
+    "Name": "Klocki LEGO City",
+    "Category": "Zabawki",
+    "Price": 49.99,
+    "Quantity": 200
+  },
+  {
+    "Id": 15,
+    "Name": "Zabawka interaktywna Furby",
+    "Category": "Zabawki",
+    "Price": 39.99,
+    "Quantity": 100
+  },
+  {
+    "Id": 16,
+    "Name": "Wielka księga dinozaurów",
+    "Category": "Książki",
+    "Price": 15.99,
+    "Quantity": 80
+  },
+  {
+    "Id": 17,
+    "Name": "Kurs języka angielskiego dla dzieci",
+    "Category": "Książki",
+    "Price": 12.99,
+    "Quantity": 50
+  },
+  {
+    "Id": 18,
+    "Name": "Encyklopedia zwierząt",
+    "Category": "Książki",
+    "Price": 21.0,
+    "Quantity": 30
+  },
+  {
+    "Id": 19,
+    "Name": "Encyklopedia zwierząt nowe wydanie",
+    "Category": "Książki",
+    "Price": 21.0,
+    "Quantity": 30
+  },
+  {
+    "Id": 20,
+    "Name": "Laptop HP Spectre",
+    "Category": "Elektronika",
+    "Price": 0.0,
+    "Quantity": 25
+  }
+]

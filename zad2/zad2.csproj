@@ -1,0 +1,80 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\css\bootstrap.min.css" />
+    <None Include="wwwroot\assets\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\assets\css\now-ui-dashboard.css" />
+    <None Include="wwwroot\assets\css\now-ui-dashboard.css.map" />
+    <None Include="wwwroot\assets\css\now-ui-dashboard.min.css" />
+    <None Include="wwwroot\assets\demo\demo.css" />
+    <None Include="wwwroot\assets\demo\demo.js" />
+    <None Include="wwwroot\assets\fonts\nucleo-license.md" />
+    <None Include="wwwroot\assets\fonts\nucleo-outline.eot" />
+    <None Include="wwwroot\assets\fonts\nucleo-outline.ttf" />
+    <None Include="wwwroot\assets\fonts\nucleo-outline.woff" />
+    <None Include="wwwroot\assets\fonts\nucleo-outline.woff2" />
+    <None Include="wwwroot\assets\img\apple-icon.png" />
+    <None Include="wwwroot\assets\img\bg5.jpg" />
+    <None Include="wwwroot\assets\img\default-avatar.png" />
+    <None Include="wwwroot\assets\img\favicon.png" />
+    <None Include="wwwroot\assets\img\header.jpg" />
+    <None Include="wwwroot\assets\img\mike.jpg" />
+    <None Include="wwwroot\assets\img\now-logo.png" />
+    <None Include="wwwroot\assets\img\now-ui-dashboard.gif" />
+    <None Include="wwwroot\assets\js\core\bootstrap.min.js" />
+    <None Include="wwwroot\assets\js\core\jquery.min.js" />
+    <None Include="wwwroot\assets\js\core\popper.min.js" />
+    <None Include="wwwroot\assets\js\now-ui-dashboard.js" />
+    <None Include="wwwroot\assets\js\now-ui-dashboard.js.map" />
+    <None Include="wwwroot\assets\js\now-ui-dashboard.min.js" />
+    <None Include="wwwroot\assets\js\plugins\bootstrap-notify.js" />
+    <None Include="wwwroot\assets\js\plugins\chartjs.min.js" />
+    <None Include="wwwroot\assets\js\plugins\perfect-scrollbar.jquery.min.js" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\cards\_card-chart.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\cards\_card-map.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\cards\_card-plain.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\cards\_card-user.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\mixins\_buttons.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\mixins\_cards.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\mixins\_dropdown.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\mixins\_inputs.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\mixins\_page-header.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\mixins\_sidebar.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\mixins\_transparency.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\mixins\_vendor-prefixes.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\plugins\_plugin-animate-bootstrap-notify.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\plugins\_plugin-perfect-scrollbar.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\_alerts.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\_buttons.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\_cards.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\_checkboxes-radio.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\_dropdown.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\_fixed-plugin.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\_footers.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\_images.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\_inputs.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\_misc.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\_mixins.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\_navbar.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\_nucleo-outline.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\_page-header.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\_responsive.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\_sidebar-and-main-panel.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\_tables.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\_typography.scss" />
+    <None Include="wwwroot\assets\scss\now-ui-dashboard\_variables.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Chart.js" Version="3.7.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>
